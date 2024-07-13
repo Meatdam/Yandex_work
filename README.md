@@ -71,7 +71,7 @@ pip install -r requirements.txt для всех систем
 ```
  python score_message.py   
 ```
-Команда SQL запросов лежат в корне проекта commands_SQL<br>
+Команды SQL запросов лежат в корне проекта commands_SQL<br>
 Сегментация лежит в корне проекта block_diagram.pdf<br>
 файл score_message.py - скрипт для вывода баллов в шаблон.
 
