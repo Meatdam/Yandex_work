@@ -1,0 +1,26 @@
+Есть две таблицы:
+1. orders (order_id, promocode_id) - заказы
+2. promocodes (promocode_id, name, discount) – промокоды
+
+1. Вывести все промокоды с скидкой более 30%
+
+SELECT * from promocodes
+WHERE discount > 30;
+
+2. Собрать селект, показывающий долю заказов с промокодами
+
+SELECT p.name AS name_promocode, COUNT(*) AS usage_count
+FROM orders o
+JOIN promocodes p ON o.promocode_id = p.promocode_id
+GROUP BY p.promocode_id, p.name
+ORDER BY usage_count DESC
+
+3. Вывести список промокодов (название) и число его использований, отсотированный по популярности.
+
+SELECT p.name AS name_promocode, COUNT(*) AS usage_count
+FROM orders o
+JOIN promocodes p ON o.promocode_id = p.promocode_id
+GROUP BY p.promocode_id, p.name
+ORDER BY usage_count DESC
+
+
