@@ -76,3 +76,6 @@ pip install -r requirements.txt для всех систем
 Сегментация лежит в корне проекта block_diagram.pdf<br>
 файл score_message.py - скрипт для вывода баллов в шаблон.
 
+Автор проекта:<br>
+[Кузькин Илья](https://github.com/Meatdam)
+
