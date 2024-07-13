@@ -56,4 +56,22 @@ git@github.com:Meatdam/Yandex_work.git
 2. Необходимо установить виртуальное окружение себе на ПК
 ```
 python3 -m venv venv для MacOs и linux систем
+python -m venv venv для windows
 ```
+3. Активировать виртуальное окружение
+```
+source venv/bin/activate для MasOs и Linux систем
+venv\Scripts\activate.bat для windows
+```
+4. Установить пакеты с виртуального окрежения
+```
+pip install -r requirements.txt для всех систем
+```
+5. Выполнить команду для записи готового файла через jinja2 в файл yandex_result.html который будет находится в корне проекта.
+```
+ python score_message.py   
+```
+Команда SQL запросов лежат в корне проекта commands_SQL<br>
+Сегментация лежит в корне проекта block_diagram.pdf<br>
+файл score_message.py - скрипт для вывода баллов в шаблон.
+
